@@ -55,6 +55,25 @@ def predict():
         return render_template(output_page, pred_output=pred, user_image=file_path)
 
 
+
+#     # Define CSS styles for the table
+#     table_styles = """
+#     <style>
+#         th {
+#             background-color: black; /* Background color for table headers */
+#             color: white; /* Text color for table headers */
+#         }
+#         td {
+#             background-color: black; /* Background color for table cells */
+#             color: white; /* Text color for table cells */
+#         }
+#     </style>
+#     """
+#
+#     # Display the CSS-styled table with formatted ratings and a black background
+#     st.write(table_styles, unsafe_allow_html=True)
+#     st.table(top_s[['', '']].style.format({'Rating': '{:.1f}'}))
+
 # For local system & cloud
 if __name__ == "__main__":
     app.run(threaded=False)
